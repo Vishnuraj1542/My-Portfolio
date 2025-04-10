@@ -3,14 +3,17 @@
     height:300px;
     border-radius:50%;
     object-fit: cover;
+    border:2px solid white;
+    box-shadow:0 0 210px rgba(12, 194, 207, 0.2);
 }
 nav{
     border-bottom:2px solid white;
     height:80px;
     box-shadow: 0 0 8px white;
+    background-color: rgba(33, 37, 41,0,3);
 }
 section{
-    height:90vh;
+    height:85vh;
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,4 +68,20 @@ body {
     background-color: #ffffff;
     color: black;
     box-shadow: 0 0 20px #ffffff;
+}
+.skill-icon{
+    background-color: white;
+    border-radius:20px;
+    padding-top:20px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+.skill-icon {
+    transition: transform 0.3s ease;
+  }
+.skill-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgb(6, 157, 216);
+  }
+.fa-3x:hover{
+    font-size: 40px;
 }

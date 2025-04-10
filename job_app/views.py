@@ -9,3 +9,7 @@ class Home(View):
 class Contact(View):
     def get(self,request):
         return render(request,'contact.html')
+
+class Skill(View):
+    def get(self,request):
+        return render(request,'skills.html')

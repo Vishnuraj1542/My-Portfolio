@@ -1,57 +1,51 @@
-
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
 <section id="skills" class="container py-5 text-center">
     <h2 class="mb-4 fw-bold">Skills</h2>
     <div class="row justify-content-center gap-4">
       
-      <!-- Python -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-python fa-3x text-warning"></i>
         <p class="mt-2">Python</p>
       </div>
   
-      <!-- Django -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-python fa-3x text-success"></i>
         <p class="mt-2">Django</p>
       </div>
   
-      <!-- Django Rest Framework (text-based since no icon) -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fas fa-plug fa-3x text-secondary"></i>
         <p class="mt-2">DRF</p>
       </div>
   
-      <!-- PostgreSQL -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fas fa-database fa-3x text-primary"></i>
         <p class="mt-2">PostgreSQL</p>
       </div>
   
-      <!-- HTML -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-html5 fa-3x text-danger"></i>
         <p class="mt-2">HTML5</p>
       </div>
   
-      <!-- CSS -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-css3-alt fa-3x text-primary"></i>
         <p class="mt-2">CSS3</p>
       </div>
   
-      <!-- Bootstrap -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-bootstrap fa-3x text-purple"></i>
         <p class="mt-2">Bootstrap</p>
       </div>
   
-      <!-- JavaScript -->
+
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-js-square fa-3x text-warning"></i>
         <p class="mt-2">JavaScript</p>
       </div>
   
-      <!-- GitHub -->
       <div class="col-4 col-md-2 skill-icon">
         <i class="fab fa-github fa-3x text-dark"></i>
         <p class="mt-2">GitHub</p>
@@ -59,4 +53,6 @@
   
     </div>
   </section>
+  
+{% endblock %}
   

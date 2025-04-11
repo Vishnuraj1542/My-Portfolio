@@ -1,3 +1,6 @@
+*{
+    color:white;
+}
 .profile img{
     width:300px;
     height:300px;
@@ -10,7 +13,7 @@ nav{
     border-bottom:2px solid white;
     height:80px;
     box-shadow: 0 0 8px white;
-    background-color: rgba(33, 37, 41,0,3);
+    background-color: rgba(33, 37, 41,1);
 }
 section{
     height:85vh;
@@ -84,4 +87,21 @@ body {
   }
 .fa-3x:hover{
     font-size: 40px;
+}
+.pic{
+    margin:0;
+    padding:0;
+    border-radius: 230px;
+    img{
+        border-radius: 30px;
+        border:3px solid rgb(229, 229, 18);
+    }
+}
+.table-responsive{
+    border-radius: 30px;
+    border:2px solid white;
+}
+.pics{
+    height:700px;
+    width:100wh;
 }

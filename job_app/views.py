@@ -22,13 +22,19 @@ class Contact(View):
         form=ContactForm(request.POST)
         if form.is_valid():
             contact=form.save()
-            subject=f"A new message from {contact.name}"
-            message= contact.message
+            subject=f"A new message from {contact.name} "
+            message= f"{contact.message} Email: {contact.email}"
             send_mail(subject,message,settings.EMAIL_HOST_USER,[settings.EMAIL_HOST_USER],fail_silently=False)
-            return HttpResponse('''<script>alert("Thankyou {contact.name}");window.location=""</script>''')
+            return HttpResponse('''<script>alert("Thankyou sir ");window.location=""</script>''')
         return render(request,'contact.html',{'from':form})
 
 
 class Project(View):
     def get(self,request):
         return render(request,'project.html')
+
+def Football(request):
+    return render(request,'football.html')
+
+def Education(request):
+    return render(request,'education.html')

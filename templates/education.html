@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<div class="row comp">
+    <h3 class="mt-3">Education</h3>
+    <div class="edu">
+        <h3>B.Tech</h3>
+        <h6>B.E (Electrical and Electronics Engineering)</h6>
+        <p>JCT College Of Engineering and Technology</p>
+    </div>
+    <div class=" edu">
+        <h3>Higher Secondary (XII)</h3>
+        <h6>Computer science</h6>
+        <p>Ghss Ganeshgiri</p>
+    </div>
+    <div class="hr"></div>
+    <div class="edu">
+        <h3>SSLC</h3>
+        <h6>State syllabus</h6>
+        <p>TRK HSS Vaniamkulam</p>
+    </div>
+    <div class=" edu">
+        <h3>Internship</h3>
+        <h6>Python Django Full Stack Developer</h6>
+        <P>Trycode Innovations</P>
+
+    </div>
+    <hr>
+    <h3 class="mt-3">Certifications</h3>
+    
+    <div class="col-12 col-md-3">
+        <img src="{% static 'images/Certificates/eduprep.png' %}" class="img-fluid">
+    </div>
+    <div class="col-12 col-md-3">
+        <img src="{% static 'images/Certificates/ds-py.jpg' %}" class="img-fluid">
+    </div>
+    <div class="col col-md-3">
+        <img src="{% static 'images/Certificates/great-html.jpg' %}" class="img-fluid">
+    </div>
+    <div class="col-12 col-md-3">
+        <img src="{% static 'images/Certificates/py-basics.jpg' %}" class="img-fluid">
+    </div>
+    <div class="col-12 col-md-3 mt-4">
+        <img src="{% static 'images/Certificates/internshipcertificate.jpg' %}" class="img-fluid">
+    </div>
+
+</div>
+{% endblock %}

@@ -2,14 +2,15 @@
 {% load static %}
 {% block body %}
 <div class="container-fluid">
-    <h3 class="mb-4 text-light text-center mt-4">PROJECTS</h3><hr>
     <div class="row justify-content-center">
-        <h2 class="text-center pb-2">SAFE KERALA</h2>
+      <div class="abstract col-12 p-0 m-0 text-center">
+        <h2 class="text-center pb-2 d-inline ">SAFE KERALA</h2><p class="d-inline"><a class="text-light ms-5" href="{% url 'footballsite' %}">Football site link</a></p>
+      </div>
         <div class="abstract col-12 p-5">
             <p>Safe Kerala – Migrated Workers Portal addresses the challenge of finding authorized workers from outside Kerala. This interactive, web-enabled application allows for seamless identity verification and worker registration. Police officers play a crucial role by adding verified worker details to the site, ensuring that only authorized personnel are listed. The portal allows users to search for workers based on their technical skills, providing a precise match for their needs. If any worker is found to have a criminal record, the police can block their profile from the site. Additionally, users can lodge complaints about workers directly through the portal, ensuring quick police intervention. The admin has the capability
-                 to oversee all site activities, ensuring smooth operations and facilitating the availability of authorized workers for users. The system streamlines the process of finding skilled labor while ensuring safety and security for all parties involved.</p>
-            <a href="https://github.com/Vishnuraj1542/SAFE-KERALA" target="_blank">github</a><br>
-            <a href="https://vishnuraj1542.pythonanywhere.com/" target="_blank">live link</a><br>
+              to oversee all site activities, ensuring smooth operations and facilitating the availability of authorized workers for users. The system streamlines the process of finding skilled labor while ensuring safety and security for all parties involved.</p>
+            <p class="d-inline">To see code github click here: </p><a href="https://github.com/Vishnuraj1542/SAFE-KERALA" target="_blank">github</a><br>
+            <p class="d-inline">To see live Application click here: </p><a href="https://vishnuraj1542.pythonanywhere.com/" target="_blank">live link</a><br>
         </div>
         <div class="pic bg-light col-md-8">
             <img class="img-fluid d-block h-80" src="{% static 'images/keralafront.png' %}">
@@ -74,9 +75,23 @@
               </div>
               
             </div>
+            <div class="row container justify-content-center mt-5">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="ps-5 border rounded bg-dark text-white">
+                  <h2 class="mb-3">🛠️ Tech Stack</h2>
+                  <ul>
+                    <li>Frontend: HTML, CSS, Bootstrap, JavaScript</li>
+                    <li>Backend: Python (Django)</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>IDE: VS Code, PyCharm</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           
         <div class="pics row">
+          <h2 class="text-center">Role based login system</h2>
             <div class="image col-12 col-md-4 col-lg-4">
                 <img src="{% static 'images/login.png' %}" class="img-fluid" alt="">
                 <h3 class="text-center pt-2">Users Login Page</h3>
@@ -98,17 +113,6 @@
                 <h3 class="text-center pt-2">Admin page</h3>
             </div>
         </div>
-        <div class="col justify-content-center d-block">
-            <h2>🛠️ Tech Stack</h2>
-            <ul>
-                <li>Frontend: HTML, CSS, Bootstrap, JavaScript</li>
-                <li>Backend: Python (Django)</li>
-                <li>Database: Postgresql</li>
-                <li>IDE: VS Code - PyCharm</li>
-            </ul>
-        </div>
-        
-          
     </div> 
 </div>
 {% endblock %}

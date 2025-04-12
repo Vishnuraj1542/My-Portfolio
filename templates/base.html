@@ -19,7 +19,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <div class="collapse navbar-collapse justify-content-end bg-dark" id="navbarContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" href="{% url 'homepage' %}">Home</a>
@@ -31,12 +31,12 @@
             <a class="nav-link" href="{% url 'projects' %}">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#certificates">Certificates</a>
+            <a class="nav-link" href="{% url 'education' %}">Edu & cert</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'contact_page' %}">Contact</a>
           <li class="nav-item">
-            <a class="btn btn-outline-light ms-2" href="{% static 'Resume.pdf' %}" target="_blank">Resume</a>
+            <a class="btn btn-outline-light ms-2" href="{% static 'vishnuraj_Resume.pdf' %}" download>Resume</a>
           </li>
         </ul>
       </div>
@@ -59,16 +59,19 @@
             <div class="social-icon">
               <a href="https://www.linkedin.com/in/vishnuraj-c/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://www.github.com/vishnuraj1542/" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www." target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="mailto:vishnurajcheerankuzhi@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.instagram.com/vishnu__r_aj/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-2 mt-3">
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrtCHSwJkQmNhnkcgfFjCdjXMTfqsZndxSrBMJMJhRCsDkQdKpgjTvnjLCntnSBrqzqsB" class="btncv" target="_blank">Hire Me</a>
-              <a href="{% static 'vishnuraj_python_fullstackdeveloper_resume.pdf' %}" class="btncv" target="_blank">View Resume</a>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrtCHSwJkQmNhnkcgfFjCdjXMTfqsZndxSrBMJMJhRCsDkQdKpgjTvnjLCntnSBrqzqsB" class="btncv">Hire Me</a>
+              <a href="{% static 'vishnuraj_resume.pdf' %}" class="btncv" target="_blank">View Resume</a>
             </div>
           </div>
         </div>
       </div>
+      <div class="mention mb-0"><P class="text-dark text-center"> @vishnu raj c | All Right Reserved</p></div>
     </section>
+    
     
     {% endblock %}
   </main>
